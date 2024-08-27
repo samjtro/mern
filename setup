@@ -1,0 +1,19 @@
+#!/bin/bash
+
+npm init
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+npm install @mui/material @mui/icons-material @emotion/styled @emotion/react
+cd ..
+npm install dotenv morgan express mongoose axios
+curl '' >index.js
+curl '' >app.js
+m models
+cd models
+curl '' >model.js
+cd frontend/src
+rm -rf assets
+rm -rf App.jsx main.jsx
+curl '' >App.jsx
+curl '' >main.jsx
