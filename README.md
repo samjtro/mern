@@ -1,10 +1,6 @@
 # mern
 
-usage: `chmod +x setup; ./setup`
-
-two notes:
-- before doing this, create a git repo with the Node gitignore; then, move the setup file to your repo
-- having `npm` installed is the only requirement
+usage: create a git repo with the Node gitignore, then: `curl 'https://raw.githubusercontent.com/samjtro/mern/main/setup' > setup; chmod +x setup; ./setup`
 
 ## what does this do?
 
