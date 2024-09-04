@@ -6,10 +6,10 @@ cd frontend
 npm install
 npm install axios @mui/material @mui/icons-material @emotion/styled @emotion/react
 cd ..
-npm install dotenv morgan express mongoose
+npm install nodemon dotenv morgan express mongoose
 curl 'https://github.com/samjtro/mern/blob/main/index.js' >index.js
 curl 'https://github.com/samjtro/mern/blob/main/app.js' >app.js
-m models
+mkdir models
 cd models
 curl 'https://github.com/samjtro/mern/blob/main/models/model.js' >model.js
 cd frontend/src
