@@ -1,6 +1,8 @@
 # mern
 
-usage: create a git repo with the Node gitignore, then: `curl 'https://raw.githubusercontent.com/samjtro/mern/main/setup' > setup; chmod +x setup; ./setup`
+create a git repo with the Node gitignore, then:
+
+`curl 'https://raw.githubusercontent.com/samjtro/mern/main/setup' > setup; chmod +x setup; ./setup`
 
 ## what does this do?
 
