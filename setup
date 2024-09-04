@@ -6,15 +6,23 @@ cd frontend
 npm install
 npm install axios @mui/material @mui/icons-material @emotion/styled @emotion/react
 cd ..
-npm install nodemon dotenv morgan express mongoose
-curl 'https://github.com/samjtro/mern/blob/main/index.js' >index.js
-curl 'https://github.com/samjtro/mern/blob/main/app.js' >app.js
+npm install --save-dev express nodemon
+npm install dotenv morgan mongoose
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/index.js' >index.js
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/app.js' >app.js
 mkdir models
 cd models
-curl 'https://github.com/samjtro/mern/blob/main/models/model.js' >model.js
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/models/model.js' >model.js
+cd ..
 cd frontend/src
 rm -rf assets
 rm -rf App.jsx main.jsx
-curl 'https://github.com/samjtro/mern/blob/main/frontend/src/App.jsx' >App.jsx
-curl 'https://github.com/samjtro/mern/blob/main/frontend/src/main.jsx' >main.jsx
-curl 'https://github.com/samjtro/mern/blob/main/frontend/src/db.js' >db.js
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/frontend/src/App.jsx' >App.jsx
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/frontend/src/main.jsx' >main.jsx
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/frontend/src/db.js' >db.js
+curl 'https://raw.githubusercontent.com/samjtro/mern/main/sample.env' >.env
+echo 'your mern project has been boilerplated. now:'
+echo '1. add your MONGODB_URI & PORT to the .env file'
+echo '2. edit the app.js file, fix all of the TODOs to create a working API'
+echo '3. edit the models/model.js file, to create your own mongo model'
+echo '4. wip - i think thats it for now! create a frontend in the frontend directory and it will be statically served from index.js'
